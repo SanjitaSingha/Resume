@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.borderBottom {
+  border-bottom: 1px solid #AEAEAE;
+}
+.borderRight {
+  border-right: 1px solid #AEAEAE;
+}
+.mainBody {
+  background-color: #131313;
+  padding: 50px;
+  font-family: 'Lato';
+}
+.mainContent {
+  background-color: white;
+  margin: 0px 90px;
+  padding: 0px 30px;
+  box-shadow: 1px 5px 5px 5px #000000;
+}
+.bodyPadding {
+  padding: 30px 0px;
+}
+.innerPadding {
+  padding: 15px;
+}
+.innerBody:last-child {
+  margin-bottom: 30px;
+}
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+.nameText {
+  margin: 0;
+  font-size: 43px;
+}
+.normalText {
+  color: #595959;
+  padding-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+.professionText {
+  letter-spacing: 5.5px;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+.iconContainer:not(:last-child) {
+  margin-bottom: 10px;
+}
+.iconCircle {
+  background-color: #131313;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.iconText {
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.header {
+  font-weight: bold;
+  color: #595959;
+}
+.list {
+  margin-left: 40px;
+}
+
+@media (max-width: 991px) {
+  .borderRight {
+    border-width: 0px;
+  }
+  .mainContent {
+    margin: 0px 20px;
+  }
+}
+@media (max-width: 840px) {
+  .nameText {
+    font-size: 37px;
+  }
+  .professionText {
+    font-size: 15px;
+  }
+  .iconCircle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.border {
+    padding-left:20px;
+    position:relative;
+    /*margin-left:0.6em;
+    box-sizing:border-box;*/
+}
+.border:not(.end) {
+    border-left:1px solid blue;
+}
+.border:before
+{
+    background-color:blue;
+    width:1em;
+    height:1em;
+    content:'';
+    border-radius:50%;
+    position:absolute;
+    left:-0.5em;
+    top:0;
+}
