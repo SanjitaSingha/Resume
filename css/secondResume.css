@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
 body {
   font-family: 'Lato';
+  background-color: black;
 }
 .mainContent {
   margin: 30px 90px;
@@ -16,6 +17,10 @@ body {
 .row {
   margin-left: 0;
   margin-right: 0;
+}
+.flexAndWrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 .borderBottom {
   border-bottom: 1px solid #AEAEAE;
@@ -29,7 +34,7 @@ body {
 }
 .leftSection {
   background-color: #131313;
-  padding: 30px 0px 30px 30px;
+  padding: 0;
 }
 .profileImageContainer {
   display: flex;
@@ -37,26 +42,173 @@ body {
   align-items: center;
 }
 .bigCircle {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   border-radius: 50%;
 }
-.headingUnderLineWhite:after {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
+.headingUnderLineWhite {
+  margin-bottom: 25px;
 }
-.headingUnderLine::after {
+.headingUnderLineWhite:after {
+  content: '';
   display: block;
   width: 100%;
   height: 2px;
+  background-color: #CCC;
+  margin-top: 10px;
+}
+.marginL15 {
+  margin-left: 15px;
+}
+.headingUnderLine {
+  margin-bottom: 25px;
+  flex: 1;
+}
+.headingUnderLine:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
   background-color: #131313;
 }
 .bioAllInfo {
+  padding: 0px 0px 40px 40px;
+}
+.infoIconContainer {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  margin-bottom: 15px;
+  padding-right: 25px;
+}
+.infoLabel {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+}
+.infoInner:not(:last-child) {
+  margin-bottom: 50px;
+}
+.infoText {
+  font-size: 16px;
+  color: #ccc;
+  /*margin-top: 3px;*/
+}
+.interestIconOuterContainer {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  margin-right: 7px;
+}
 
+.interestIconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+}
+
+/*Ride Section start*/
+
+.rideSide {
+  padding: 0px;
+  background-color: #fff;
+}
+.rideSideInner {
+  padding: 0px 40px 40px;
+}
+.nameSection {
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+.nameText {
+  margin: 0;
+  font-size: 43px;
+}
+
+.professionText {
+  letter-spacing: 5.5px;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.smallCircle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #131313;
+  align-self: flex-start;
+}
+
+.ulList {
+  list-style: none;
+}
+.eachListWrapper {
+  display: flex;
+  padding-bottom: 25px;
+  padding-left: 30px;
+}
+.experienceDate {
+  flex: 1;
+  font-weight: bold;
+  color: #131313;
+}
+.border {
+    /*padding-left: 15px;*/
+    position:relative;
+    margin-left: 25px;
+}
+.border:not(:last-child) {
+    border-left: 1px solid #131313;
+}
+.border:before
+{
+    background-color:white;
+    border: 2px solid #131313;
+    width:1em;
+    height:1em;
+    content:'';
+    border-radius:50%;
+    position:absolute;
+    left:-0.5em;
+    top:0;
+}
+.progressContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.progress {
+  height: 5px;
+  margin-bottom: 0px;
+  flex: 1;
+  /*margin-left: 15px;*/
+}
+.progress-bar {
+  background-color: #a3a4a5;
+}
+
+@media (max-width: 991px) {
+  .nameText {
+    font-size: 37px;
+  }
+  .professionText {
+    font-size: 15px;
+  }
+  .iconCircle {
+    width: 30px;
+    height: 30px;
+  }
+  .mainContent {
+    margin: 10px;
+  }
 }

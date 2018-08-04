@@ -105,24 +105,3 @@ h1, h2, h3, h4, h5, h6 {
     height: 30px;
   }
 }
-
-.border {
-    padding-left:20px;
-    position:relative;
-    /*margin-left:0.6em;
-    box-sizing:border-box;*/
-}
-.border:not(.end) {
-    border-left:1px solid blue;
-}
-.border:before
-{
-    background-color:blue;
-    width:1em;
-    height:1em;
-    content:'';
-    border-radius:50%;
-    position:absolute;
-    left:-0.5em;
-    top:0;
-}
