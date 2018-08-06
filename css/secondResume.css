@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Lato';
   background-color: black;
@@ -28,9 +29,13 @@ body {
 .headerFont {
   font-weight: bold;
   font-size: 17px;
+  margin-top: 5px;
 }
 .whiteColor {
   color: #ffffff;
+}
+.blackFont {
+  color: #131313;
 }
 .leftSection {
   background-color: #131313;
@@ -40,6 +45,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 250px;
 }
 .bigCircle {
   width: 150px;
@@ -74,7 +80,7 @@ body {
   width: 100%;
   height: 2px;
   margin-top: 10px;
-  background-color: #131313;
+  background-color: #7d7d7d;
 }
 .bioAllInfo {
   padding: 0px 0px 40px 40px;
@@ -89,15 +95,17 @@ body {
 .infoLabel {
   font-size: 17px;
   font-weight: bold;
-  color: #fff;
 }
 .infoInner:not(:last-child) {
   margin-bottom: 50px;
 }
 .infoText {
   font-size: 16px;
-  color: #ccc;
   /*margin-top: 3px;*/
+  text-align: justify;
+}
+.lightGreyFont {
+  color: #ccc;
 }
 .interestIconOuterContainer {
   display: flex;
@@ -115,7 +123,13 @@ body {
 }
 
 /*Ride Section start*/
-
+.rightInfoText {
+  font-size: 16px;
+}
+.rightBlackIcon {
+  font-size: 25px;
+  /*color: #131313;*/
+}
 .rideSide {
   padding: 0px;
   background-color: #fff;
@@ -130,7 +144,8 @@ body {
 }
 .nameText {
   margin: 0;
-  font-size: 43px;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .professionText {
@@ -196,6 +211,17 @@ body {
 .progress-bar {
   background-color: #a3a4a5;
 }
+.userBigIcon {
+  color: #131313;
+  font-size: 90px;
+}
+.leftWhiteIcon {
+   font-size: 20px;
+   /*color: #fff;*/
+}
+.interestIcon {
+   font-size: 40px;
+}
 
 @media (max-width: 991px) {
   .nameText {
@@ -210,5 +236,5 @@ body {
   }
   .mainContent {
     margin: 10px;
+
   }
-}
