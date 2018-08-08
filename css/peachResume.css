@@ -1,0 +1,202 @@
+*, h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.flexAndWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blackFont {
+  color: #4c4b4b;
+}
+.greyFont {
+  color: #635c5c;
+}
+.whiteFont {
+  color: #fff;
+}
+.padding0 {
+  padding: 0;
+}
+.peachBody {
+  background-color: #efeded;
+  font-family: 'Lato';
+}
+.peachContainer {
+  background-color: #fff;
+  padding: 20px;
+  margin: 50px 110px;
+}
+
+/*LEFT SECTION*/
+
+.leftGrey {
+  background-color: #aba9a9;
+}
+
+.profileImageContainer {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin-bottom: 20px;*/
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.leftHeader {
+  font-size: 17px;
+  letter-spacing: 3.5px;
+  margin-left: 20px;
+}
+.leftMediumText {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.underLine:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  display: block;
+  background: #fff;
+  margin-top: 5px;
+}
+.peachLeftSideInnerContainer {
+  padding: 15px 20px 35px 20px;
+}
+
+.leftInnerEachSection {
+  margin-bottom: 30px;
+}
+.marginB10 {
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 9px;
+  margin-bottom: 0px;
+  flex: 1;
+  border-radius: 2px;
+  /*margin-left: 15px;*/
+  background-color: #5A5A5A;
+}
+
+.progress-bar {
+  background-color: #E9D5C3;
+}
+/*#edd5c0*/
+.peachIconContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.peachCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #E9D5C3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.peachIconStyle {
+  font-size: 15px;
+}
+
+/*Right section*/
+.peachRightSectionContainer {
+  background-color: white;
+  padding-left: 20px;
+}
+.nameSection {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E9D5C3;
+}
+.profileNameText {
+  font-size: 45px;
+  letter-spacing: 8.5px;
+  font-weight: bold;
+  text-align: center;
+}
+.professionFont {
+  font-size: 20px;
+  margin-top: 15px;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+.rightSideEachSection {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.rightHeader {
+  font-size: 17px;
+  letter-spacing: 3.5px;
+  margin-bottom: 10px;
+}
+.rightMediumText {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.aboutGreySection {
+  background-color: #e2e0e0;
+  padding: 5px;
+}
+
+.referenceGreyBg {
+  background-color: #e2e0e0;
+  padding: 5px;
+}
+.referenceInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.referenceInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  min-width: 210px;
+}
+.referenceUserIcon {
+  font-size: 45px;
+}
+.referenceName {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .profileNameText {
+    font-size: 37px;
+  }
+  .professionText {
+    font-size: 15px;
+  }
+  .leftMediumText {
+    font-size: 13px;
+  }
+  .rightMediumText {
+    font-size: 13px;
+  }
+  .peachContainer {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+  }
+}
