@@ -140,6 +140,10 @@
 .rightNormalFont {
   font-size: 15px;
   text-align: justify;
+  line-height: 1.6;
+}
+.boldFont {
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {

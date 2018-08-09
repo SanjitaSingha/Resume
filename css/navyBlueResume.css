@@ -1,0 +1,92 @@
+*, h1,h6, p, h3 {
+  margin: 0;
+  padding: 0;
+}
+.whiteFont {
+  color: #fff;
+}
+.blackFont {
+  color: #131313;
+}
+.greyFont {
+
+}
+
+.marginT20 {
+  margin-top: 20px;
+}
+
+.navyBlueResume {
+  background-color: #ccc;
+  font-family: 'Lato'
+}
+
+.mainBody {
+  margin: 50px 110px;
+  box-shadow: 2px 2px 5px 1px #afadaa;
+}
+
+.blueSection {
+  background-color: #0A3574;
+  padding: 30px 30px 20px 30px;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phoneContainer {
+  margin-right: 25px;
+}
+.contactLabel {
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+.greyUnderLine::after {
+  content: '';
+  display: block;
+  height: 1.5px;
+  background-color: #ccc;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.whiteSection {
+  background-color: #fff;
+  padding: 20px 30px 20px 30px;
+
+}
+.headingFont {
+  font-size: 22px;
+}
+.subHeading {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.yearDiv {
+  margin-right: 30px;
+  width: 125px;
+}
+.ulList {
+  padding-left: 20px;
+}
+.normalFont {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.progressWidth {
+  width: 250px;
+  margin-bottom: 20px;
+}
+.progress {
+  height: 9px;
+  margin-bottom: 0px;
+}
+.progress-bar {
+  background-color: #0A3574;
+}

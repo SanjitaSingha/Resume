@@ -16,7 +16,7 @@
 
 .dottedResume {
   background-color: #fff;
-  padding: 30px;
+  padding: 50px;
   margin: 50px 110px;
 }
 
@@ -28,8 +28,27 @@
   color: #fff;
 }
 
+.marginB30:not(:last-child) {
+  margin-bottom: 30px;
+}
+.marginB20:not(:last-child) {
+  margin-bottom: 20px;
+}
 .blackFont {
   color: #131313;
+}
+.blueBg {
+  background-color: #60A4E2;
+}
+.lightGreyBg {
+  background-color: #ccc;
+}
+.blackBg {
+  background-color: #131313;
+  color: #fff;
+}
+address {
+  margin-bottom: 10px;
 }
 .iconParentContainer {
   display: flex;
@@ -47,12 +66,31 @@
   background-color: #131313;
   margin-right: 7px;
 }
-
+.profileNameContainer {
+  flex-direction: column;
+  flex: 1;
+  margin-top: -109px;
+}
 .nameFont {
-  font-size: 50px;
+  font-size: 25px;
 }
 .firstLetter:first-letter {
-  font-size: 90px !important;
+  font-size: 95px !important;
+  color: #69ace0;
+  font-weight: bold;
+}
+.firstNameContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 47%;
+}
+
+.lastNameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40%;
 }
 
 .dottedBorderRight {
@@ -67,7 +105,7 @@
   display: block;
   border-bottom: 3px dotted black;
   border-right: 3px dotted black;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 .dottedBorderLeft {
   flex: 1;
@@ -81,5 +119,35 @@
   display: block;
   border-top: 3px dotted black;
   border-left: 3px dotted black;
-      margin-top: 23px;
+      margin-top: 55px;
+}
+.experienceContainer {
+  width: 350px;
+}
+.experienceFont {
+  font-weight: bold;
+  font-size: 15px;
+  flex: 1;
+  margin-right: 15px;
+}
+.listStyleNone {
+  list-style: none;
+}
+.companyNameContainer {
+  margin: 0 10px;
+  width: 192px;
+  text-align: right;
+}
+.descriptionList {
+  flex: 1;
+  padding-left: 25px;
+}
+@media (max-width: 991px) {
+  .dottedResume {
+    margin: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+
 }
